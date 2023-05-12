@@ -2,92 +2,32 @@
 
 import { Rubik } from 'next/font/google'
 import Image from 'next/image'
-import {
-  BiHome,
-  BiUserCheck,
-  BiBriefcaseAlt2,
-  BiChat,
-  BiDesktop,
-  BiCode,
-} from 'react-icons/bi'
+import { BiBriefcaseAlt2, BiChat, BiDesktop, BiCode } from 'react-icons/bi'
 
-import { Link as ScrollLink } from 'react-scroll'
 import { About } from '@/components/About'
 import { Home } from '@/components/Home'
 import { Button } from '@/components/Button'
 import { Skills } from '@/components/Skills'
+import { Sidebar } from '@/components/Sidebar'
 
 const rubik = Rubik({ subsets: ['latin'] })
-const year = new Date().getFullYear()
 
 export default function PageDefault() {
   return (
     <div className={`${rubik.className}`}>
-      {/* HEADER */}
-      <div className="flex flex-col justify-between w-72 px-8 py-12 bg-[#2E3D6E] border-r-[1px] border-slate-600 h-screen fixed">
-        <Image src="/logo.png" alt="Logo" width={140} height={80} />
+      {/* SIDEBAR */}
+      <Sidebar />
 
-        <nav className="h-[100%] py-28">
-          <ul className="text-gray-50 text-lg font-semibold">
-            <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
-              <BiHome className="mr-4 text-2xl" />
-              <span>Home</span>
-            </li>
-
-            <ScrollLink to="about" smooth={true} duration={1000}>
-              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
-                <BiUserCheck className="mr-4 text-2xl" />
-                <span>About</span>
-              </li>
-            </ScrollLink>
-
-            <ScrollLink to="projects" smooth={true} duration={1000}>
-              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
-                <BiDesktop className="mr-4 text-2xl" />
-                <span>Projects</span>
-              </li>
-            </ScrollLink>
-
-            <ScrollLink to="skills" smooth={true} duration={1000}>
-              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
-                <BiCode className="mr-4 text-2xl" />
-                <span>Skills</span>
-              </li>
-            </ScrollLink>
-
-            <ScrollLink to="experience" smooth={true} duration={1000}>
-              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
-                <BiBriefcaseAlt2 className="mr-4 text-2xl" />
-                <span>Experience</span>
-              </li>
-            </ScrollLink>
-
-            <ScrollLink to="contact" smooth={true} duration={1000}>
-              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
-                <BiChat className="mr-4 text-2xl" />
-                <span>Contact</span>
-              </li>
-            </ScrollLink>
-          </ul>
-        </nav>
-
-        <p className="text-slate-400">© {year} Claudio Rodrigo.</p>
-      </div>
-
-      {/* SECTIONS */}
       <div className="bg-slate-100 ml-72">
-        {/* SECTION MAIN */}
         <div className="bg-[#2E3D6E]">
-          <div className="md:container md:mx-auto ">
+          <div className="md:container md:mx-auto">
             <Home />
           </div>
         </div>
 
         <div className="md:container md:mx-auto ">
-          {/* SECTION ABOUT */}
           <About />
 
-          {/* SECTION PROJECTS */}
           <section
             className="flex flex-col justify-between p-20 border border-red-500"
             id="projects"
@@ -165,7 +105,6 @@ export default function PageDefault() {
             </div>
           </section>
 
-          {/* SKILLS */}
           <section
             className="flex flex-col justify-between p-20 border border-red-500"
             id="skills"
@@ -175,7 +114,6 @@ export default function PageDefault() {
             <Skills />
           </section>
 
-          {/* SECTION EXPERIENCE */}
           <section
             className="flex flex-col justify-between p-20 border border-red-500"
             id="experience"
@@ -314,7 +252,6 @@ export default function PageDefault() {
             </div>
           </section>
 
-          {/* SECTION CONTACT */}
           <section
             className="flex flex-col justify-between p-24 border border-red-500"
             id="contact"
