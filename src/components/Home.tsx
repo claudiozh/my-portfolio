@@ -13,7 +13,11 @@ import { Button } from '@/components/Button'
 
 export const Home = () => {
   return (
-    <section className="flex flex-col justify-between h-screen">
+    <section
+      className="flex flex-col justify-between h-screen"
+      id="home"
+      onMouseEnter={() => alert('Ativar menu de inicio')}
+    >
       <div className="flex justify-center items-center h-[100%]">
         <div className="flex flex-col items-center gap-8 mt-20">
           <Image
@@ -26,7 +30,7 @@ export const Home = () => {
 
           <div className="flex flex-col items-center">
             <h1 className="text-4xl font-bold text-gray-50">Claudio Rodrigo</h1>
-            <p className="text-gray-50">Hi, Im a Backend-developer.</p>
+            <p className="text-gray-50">Oi, sou um desenvolvedor backend.</p>
           </div>
 
           <div className="flex row gap-4">
@@ -65,20 +69,20 @@ export const Home = () => {
 
           <div className="flex gap-5">
             <ScrollLink to="projects" smooth={true} duration={1000}>
-              <Button text="Projects" variant="light" />
+              <Button text="Projetos" variant="light" />
             </ScrollLink>
 
             <ScrollLink to="about" smooth={true} duration={1000}>
-              <Button text="About Me" />
+              <Button text="Sobre mim" />
             </ScrollLink>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center items-center mb-10">
+      <div className="flex justify-center items-center mb-5">
         <ScrollLink to="about" smooth={true} duration={1500}>
           <div className="flex flex-col justify-center items-center gap-2">
-            <span className="text-gray-50">Scroll down</span>
+            <span className="text-gray-50">Rolar para baixo</span>
             <RiMouseLine className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer" />
           </div>
         </ScrollLink>

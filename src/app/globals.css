@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-triangle {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 15px solid #FFF;
-  position: absolute;
-  left: -15px;
-  top: 20%;
-}
-
 /* Personalizações da barra de rolagem */
 ::-webkit-scrollbar {
   width: 10px;
