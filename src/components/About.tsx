@@ -30,27 +30,26 @@ export const About = () => {
         width={160}
         height={160}
       />
+      <div className="bg-white grid grid-cols-12 gap-8 shadow-xl p-8 rounded-3xl">
+        <div className="col-span-7 text-gray-600 text-lg">
+          <div className="relative">
+            <div className="absolute w-0 h-0 left-[-52px] bottom-full transform translate-x-[-50%]">
+              <div className="mt-12 border-t-[20px] border-t-transparent border-r-white border-r-[20px]  border-b-[20px] border-b-transparent"></div>
+            </div>
 
-      <div className="bg-white flex flex-1 justify-between gap-8 shadow-xl p-8 rounded-3xl">
-        <div className="relative mt-12">
-          <div className="absolute w-0 h-0 left-[-52px] bottom-full transform translate-x-[-50%] border border-red">
-            <div className="border-t-[20px] border-t-transparent border-r-white border-r-[20px]  border-b-[20px] border-b-transparent"></div>
+            <p className="mb-10">
+              Olá, meu nome é Claudio e sou um desenvolvedor backend com
+              experiência em projetos que utilizam Node.js e seus frameworks
+              associados, incluindo Express, Fastify e Next.js. Além disso, já
+              trabalhei em projetos front-end, utilizando ferramentas como ExtJS
+              e ReactJS.
+            </p>
           </div>
-        </div>
-
-        <div className="flex-1 text-gray-600 text-lg">
-          <p className="mb-10">
-            Olá, meu nome é Claudio e sou um desenvolvedor backend com
-            experiência em projetos que utilizam Node.js e seus frameworks
-            associados, incluindo Express, Fastify e Next.js. Além disso, já
-            trabalhei em projetos front-end, utilizando ferramentas como ExtJS e
-            ReactJS.
-          </p>
 
           <Button text="Download csv" />
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="col-span-5 flex flex-col gap-8">
           <Stack language="Dev backend" percentage={80} />
           <Stack language="Dev frontend" percentage={20} />
         </div>

@@ -30,7 +30,7 @@ export default function PageDefault() {
           <Home />
         </section>
 
-        <div className="md:container md:mx-auto">
+        <div className="container mx-auto 2xl:px-36">
           <Section title="Sobre mim" icon={<BiUserCheck />} id={ids.about}>
             <About />
           </Section>

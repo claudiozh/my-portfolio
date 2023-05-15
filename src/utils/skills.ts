@@ -3,50 +3,50 @@ import { ISkill, ISkillName } from '@/interfaces/skill'
 export const skills: Record<ISkillName, ISkill> = {
   nodejs: {
     title: 'Node.js',
-    color: 'bg-green-500',
+    color: 'green',
   },
   postgresql: {
     title: 'PostgreSQL',
-    color: 'bg-indigo-500',
+    color: 'indigo',
   },
   docker: {
     title: 'Docker',
-    color: 'bg-blue-500',
+    color: 'blue',
   },
   socketio: {
     title: 'Socket.io',
-    color: 'bg-gray-500',
+    color: 'gray',
   },
   redis: {
     title: 'Redis',
-    color: 'bg-red-500',
+    color: 'red',
   },
   rabbitmq: {
     title: 'RabbitMQ',
-    color: 'bg-orange-500',
+    color: 'orange',
   },
   typescript: {
     title: 'TypeScript',
-    color: 'bg-blue-500',
+    color: 'blue',
   },
   html: {
     title: 'HTML',
-    color: 'bg-red-500',
+    color: 'red',
   },
   css: {
     title: 'CSS',
-    color: 'bg-orange-500',
+    color: 'orange',
   },
   react: {
     title: 'React',
-    color: 'bg-blue-500',
+    color: 'blue',
   },
   nextjs: {
     title: 'Next.js',
-    color: 'bg-indigo-500',
+    color: 'indigo',
   },
   git: {
     title: 'Git',
-    color: 'bg-gray-500',
+    color: 'gray',
   },
 }

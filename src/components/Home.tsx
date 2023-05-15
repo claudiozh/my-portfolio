@@ -61,7 +61,12 @@ export const Home = () => {
 
               <div className="flex gap-4">
                 {socialMedia.map((social) => (
-                  <a href={social.url} key={social.id}>
+                  <a
+                    href={social.url}
+                    key={social.id}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {social.icon}
                   </a>
                 ))}

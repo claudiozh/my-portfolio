@@ -11,7 +11,9 @@ import {
 
 import { Link as ScrollLink } from 'react-scroll'
 import { Logo } from '@/components/Logo'
-import { navLinks } from '@/utils/navlinks'
+import { ids, navLinks } from '@/utils/navlinks'
+import { useScrollspy } from '@/hooks/scrolloy'
+import clsx from 'clsx'
 
 const year = new Date().getFullYear()
 
@@ -25,6 +27,8 @@ const iconsById = {
 }
 
 export const Sidebar = () => {
+  const activeId = useScrollspy(Object.keys(ids), 350)
+
   return (
     <div className="flex flex-col justify-between w-72 h-screen fixed px-8 py-12 bg-[#2E3D6E] border-r-[1px] border-slate-600">
       <Logo />
@@ -37,9 +41,13 @@ export const Sidebar = () => {
               to={link.id}
               smooth={true}
               duration={1000}
-              activeClass="text-yellow-500"
             >
-              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
+              <li
+                className={clsx(
+                  'flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer',
+                  link.id === activeId && 'text-yellow-500',
+                )}
+              >
                 <span>{iconsById[link.id as keyof typeof iconsById]}</span>
                 <span>{link.label}</span>
               </li>
@@ -52,26 +60,3 @@ export const Sidebar = () => {
     </div>
   )
 }
-
-// import React from 'react';
-// import Scrollspy from 'react-scrollspy';
-
-// const Sidebar = () => {
-//   return (
-//     <div className="sidebar">
-//       <Scrollspy items={['section1', 'section2', 'section3']} currentClassName="active" offset={-50}>
-//         <li>
-//           <a href="#section1">Section 1</a>
-//         </li>
-//         <li>
-//           <a href="#section2">Section 2</a>
-//         </li>
-//         <li>
-//           <a href="#section3">Section 3</a>
-//         </li>
-//       </Scrollspy>
-//     </div>
-//   );
-// };
-
-// export default Sidebar;

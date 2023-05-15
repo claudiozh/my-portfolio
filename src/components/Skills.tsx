@@ -28,6 +28,15 @@ export const iconByName: Record<ISkillName, React.JSX.Element> = {
 }
 
 export const Skills = () => {
+  const colorVariants = {
+    red: 'bg-red-500',
+    blue: 'bg-blue-500',
+    green: 'bg-green-500',
+    orange: 'bg-orange-500',
+    gray: 'bg-gray-500',
+    indigo: 'bg-indigo-500',
+  }
+
   return (
     <div className="grid grid-cols-4 gap-10 justify-center mt-12">
       {Object.entries(skills).map(([key, skill]) => (
@@ -35,7 +44,7 @@ export const Skills = () => {
           key={key}
           className={clsx(
             'flex flex-col justify-center items-center gap-4 py-5 rounded-3xl shadow-md hover:-rotate-6',
-            skill.color,
+            colorVariants[skill.color as keyof typeof colorVariants],
           )}
         >
           <div className="text-7xl text-gray-50">
