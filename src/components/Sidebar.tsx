@@ -11,13 +11,11 @@ import {
 
 import { Link as ScrollLink } from 'react-scroll'
 import { Logo } from '@/components/Logo'
-import { ids, navLinks } from '@/utils/navlinks'
-import { useScrollspy } from '@/hooks/scrolloy'
-import clsx from 'clsx'
+import { navLinks } from '@/utils/navlinks'
 
 const year = new Date().getFullYear()
 
-const iconsById = {
+const iconBySectionId = {
   home: <BiHome className="mr-4 text-2xl" />,
   about: <BiUserCheck className="mr-4 text-2xl" />,
   projects: <BiDesktop className="mr-4 text-2xl" />,
@@ -27,28 +25,26 @@ const iconsById = {
 }
 
 export const Sidebar = () => {
-  const activeId = useScrollspy(Object.keys(ids), 350)
-
   return (
-    <div className="flex flex-col justify-between w-72 h-screen fixed px-8 py-12 bg-[#2E3D6E] border-r-[1px] border-slate-600">
+    <div className="flex flex-col justify-between h-screen px-8 py-12 bg-[#2E3D6E] border-r-[1px] border-slate-600">
       <Logo />
 
       <nav className="h-[100%] py-20">
         <ul className="text-lg text-gray-50 font-semibold">
           {navLinks.map((link) => (
             <ScrollLink
+              spy
+              offset={-150}
               key={link.id}
               to={link.id}
               smooth={true}
               duration={1000}
+              activeClass="text-yellow-500"
             >
-              <li
-                className={clsx(
-                  'flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer',
-                  link.id === activeId && 'text-yellow-500',
-                )}
-              >
-                <span>{iconsById[link.id as keyof typeof iconsById]}</span>
+              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
+                <span>
+                  {iconBySectionId[link.id as keyof typeof iconBySectionId]}
+                </span>
                 <span>{link.label}</span>
               </li>
             </ScrollLink>

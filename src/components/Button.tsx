@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import React, { ButtonHTMLAttributes } from 'react'
 
 type Variant = 'primary' | 'secondary' | 'light'
@@ -30,7 +31,7 @@ export const Button: React.FC<ButtonProps> = ({
   `
 
   return (
-    <button className={buttonStyles} {...props}>
+    <button className={clsx(buttonStyles)} {...props}>
       {text}
     </button>
   )

@@ -15,31 +15,34 @@ import {
 } from 'react-icons/bi'
 import { Experience } from '@/components/Experience'
 import { Contact } from '@/components/Contact'
+import { Metadata } from 'next'
 
 const rubik = Rubik({ subsets: ['latin'] })
 
+export const metadata: Metadata = {
+  title: 'Claudio Rodrigo',
+  description: 'Portfólio de Claudio Rodrigo',
+  themeColor: '#1C2948',
+}
+
 export default function PageDefault() {
   return (
-    <div className={`${rubik.className}`}>
-      <header>
+    <div className={`${rubik.className} overflow-x-hidden`}>
+      <header className="fixed w-0 lg:w-72 hidden lg:block">
         <Sidebar />
       </header>
 
-      <main className="bg-slate-100 ml-72">
+      <main className="bg-slate-100 m-0 lg:ml-72">
         <section id={ids.home}>
           <Home />
         </section>
 
-        <div className="container mx-auto 2xl:px-36">
+        <div className="lg:container mx-auto">
           <Section title="Sobre mim" icon={<BiUserCheck />} id={ids.about}>
             <About />
           </Section>
 
-          <Section
-            title="Projetos Recentes"
-            icon={<BiDesktop />}
-            id={ids.projects}
-          >
+          <Section title="Projetos" icon={<BiDesktop />} id={ids.projects}>
             <Projects />
           </Section>
 
@@ -48,7 +51,7 @@ export default function PageDefault() {
           </Section>
 
           <Section
-            title="Formação & Experiência"
+            title="Experiência"
             icon={<BiBriefcaseAlt2 />}
             id={ids.experience}
           >

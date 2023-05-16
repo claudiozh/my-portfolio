@@ -5,27 +5,20 @@ export const Contact = () => {
   const styleTextArea = 'w-full rounded-3xl px-5 py-5'
 
   return (
-    <div className="grid grid-cols-6 gap-5 mt-12">
-      <div className="col-span-2">
+    <div className="grid grid-cols-6 gap-5">
+      <div className="col-span-full md:col-span-2">
         <div>
           <h1 className="text-2xl font-bold text-gray-600">
-            Não gosta de formulários? Envie-me um email. 👋
+            Não conseguiu me encontrar em nenhuma rede social 😯?
           </h1>
           <p className="text-gray-400 mt-4">
-            Você pode enviar um email diretamente para
-            <span className="ml-1 font-bold">
-              <a
-                href="mailto:claudiorodrigozh@gmail.com"
-                className="text-red-500"
-              >
-                email
-              </a>
-            </span>
+            Não tem problema, você pode entrar em contato comigo através do
+            formulário ao lado.
           </p>
         </div>
       </div>
 
-      <div className="col-span-4">
+      <div className="col-span-full md:col-span-4">
         <form className="flex flex-col gap-5 ">
           <div className="flex gap-5">
             <input type="text" placeholder="Seu nome" className={styleInput} />

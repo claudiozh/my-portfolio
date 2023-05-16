@@ -11,3 +11,8 @@
 ::-webkit-scrollbar-thumb {
   background-color: #1C2948;
 }
+
+/* Disable text selection */
+* {
+  user-select: none;
+}

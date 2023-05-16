@@ -5,17 +5,18 @@ import { projects } from '@/utils/projects'
 
 export const Projects = () => {
   return (
-    <div className="grid grid-cols-3 mt-16 gap-8">
+    <div className="grid grid-cols-3 gap-8">
       {projects.map((project, index) => (
         <div
           key={index}
           className={clsx(
-            'my-auto max-w-[350px] bg-white text-white flex flex-col items-center justify-center',
+            'mx-auto my-auto container bg-white text-white flex flex-col items-center justify-center',
             'gap-5 p-8 rounded-3xl shadow-xl',
-            project?.emphasis && 'transform -rotate-3',
+            'col-span-full xl:col-span-1',
+            project?.emphasis && 'xl:transform xl:-rotate-3',
           )}
         >
-          <Image src={project.image} alt="Logo" width={150} height={150} />
+          <Image src={project.image} alt="Logo" width={200} height={200} />
 
           <p className="text-gray-400 text-center">{project.description}</p>
 
