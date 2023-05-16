@@ -34,7 +34,7 @@ export const Sidebar = () => {
           {navLinks.map((link) => (
             <ScrollLink
               spy
-              offset={-150}
+              offset={-450}
               key={link.id}
               to={link.id}
               smooth={true}
