@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@makotot/ghostui": "^2.0.0",
+    "@emotion/react": "11.11.0",
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "aos": "3.0.0-beta.6",
     "autoprefixer": "10.4.14",
     "clsx": "1.2.1",
     "eslint-config-next": "13.4.1",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "1.2.0",
+    "@types/aos": "3.0.4",
     "@types/react-anchor-link-smooth-scroll": "1.0.2",
     "@types/react-scroll": "1.8.7",
     "eslint": "8.40.0"

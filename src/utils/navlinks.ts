@@ -1,6 +1,14 @@
 import { INavLink } from '@/interfaces/navlink'
 
-export const ids = {
+export type INavIds =
+  | 'home'
+  | 'about'
+  | 'projects'
+  | 'skills'
+  | 'experience'
+  | 'contact'
+
+export const ids: Record<INavIds, string> = {
   home: 'home',
   about: 'about',
   projects: 'projects',

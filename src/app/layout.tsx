@@ -1,9 +1,11 @@
+import { Metadata } from 'next'
 import './globals.css'
 import { ReactNode } from 'react'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Claudio Rodrigo',
-  description: 'Site pessoal de Claudio Rodrigo',
+  description: 'Portfólio de Claudio Rodrigo',
+  themeColor: '#1C2948',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

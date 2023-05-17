@@ -1,21 +1,39 @@
-import { Sidebar } from './Sidebar'
+'use client'
+
+import clsx from 'clsx'
+import { ReactNode } from 'react'
 
 type Props = {
-  open: boolean
+  children: ReactNode
+  isOpen: boolean
+  setIsOpen: (isOpen: boolean) => void
 }
 
-function Drawer({ open }: Props) {
+export const Drawer = ({ children, isOpen, setIsOpen }: Props) => {
   return (
     <div
-      id="drawer-example"
-      className={`fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform ${
-        open ? 'translate-x-0' : '-translate-x-full'
-      } w-64`}
-      aria-labelledby="drawer-label"
+      className={clsx(
+        'min-h-screen fixed overflow-hidden z-10 bg-gray-900 bg-opacity-70',
+        'inset-0 transform ease-in-out',
+        isOpen ? 'translate-x-0' : 'translate-x-full',
+      )}
     >
-      <Sidebar />
+      <div
+        className={clsx(
+          'w-72 h-full absolute left-0 shadow-xl delay-400 ',
+          'duration-500 ease-in-out transition-all transform',
+          isOpen ? 'translate-x-0' : 'translate-x-full',
+        )}
+      >
+        {children}
+      </div>
+
+      <div
+        className="w-screen h-full cursor-pointer"
+        onClick={() => {
+          setIsOpen(false)
+        }}
+      ></div>
     </div>
   )
 }
-
-export default Drawer

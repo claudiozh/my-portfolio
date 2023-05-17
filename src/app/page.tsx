@@ -1,6 +1,5 @@
 import { Rubik } from 'next/font/google'
 import { Skills } from '@/components/Skills'
-import { Sidebar } from '@/components/Sidebar'
 import { ids } from '@/utils/navlinks'
 import { Home } from '@/components/Home'
 import { About } from '@/components/About'
@@ -15,22 +14,15 @@ import {
 } from 'react-icons/bi'
 import { Experience } from '@/components/Experience'
 import { Contact } from '@/components/Contact'
-import { Metadata } from 'next'
+import React from 'react'
+import { Header } from '@/components/Header'
 
 const rubik = Rubik({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Claudio Rodrigo',
-  description: 'Portfólio de Claudio Rodrigo',
-  themeColor: '#1C2948',
-}
 
 export default function PageDefault() {
   return (
     <div className={`${rubik.className} overflow-x-hidden`}>
-      <header className="fixed w-0 lg:w-72 hidden lg:block">
-        <Sidebar />
-      </header>
+      <Header />
 
       <main className="bg-slate-100 m-0 lg:ml-72">
         <section id={ids.home}>

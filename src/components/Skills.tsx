@@ -12,7 +12,7 @@ import { TbBrandNextjs, TbBrandTypescript } from 'react-icons/tb'
 import { ISkillName } from '@/interfaces/skill'
 import clsx from 'clsx'
 
-export const iconByName: Record<ISkillName, React.JSX.Element> = {
+const iconByName: Record<ISkillName, React.JSX.Element> = {
   nodejs: <FaNodeJs />,
   postgresql: <SiPostgresql />,
   docker: <SiDocker />,
@@ -44,7 +44,7 @@ export const Skills = () => {
           key={key}
           className={clsx(
             'col-span-2 md:col-span-1 flex flex-col justify-center items-center gap-4 py-5 rounded-3xl shadow-md hover:-rotate-6',
-            colorVariants[skill.color as keyof typeof colorVariants],
+            colorVariants[skill.color as keyof typeof colorVariants] || '',
           )}
         >
           <div className="text-7xl text-gray-50">

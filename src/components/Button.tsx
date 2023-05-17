@@ -17,7 +17,7 @@ const styleByVariant: Record<Variant, string> = {
 export const Button: React.FC<ButtonProps> = ({
   text,
   variant = 'primary',
-  className,
+  className = '',
   ...props
 }) => {
   const buttonStyles = `
@@ -28,6 +28,8 @@ export const Button: React.FC<ButtonProps> = ({
     hover:cursor-pointer hover:-translate-y-1 hover:scale-110
     ${styleByVariant[variant]}
     ${className}
+    focus:ring-0
+    focus:outline-none
   `
 
   return (
