@@ -34,7 +34,7 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
       className={clsx(
         'flex flex-col justify-between h-screen',
         'relative space-y-6 overflow-y-scroll',
-        'px-8 py-12 bg-[#2E3D6E]',
+        'px-8 py-12 bg-primary',
         className,
       )}
     >

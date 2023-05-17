@@ -1,4 +1,3 @@
-import { Rubik } from 'next/font/google'
 import { Skills } from '@/components/Skills'
 import { ids } from '@/utils/navlinks'
 import { Home } from '@/components/Home'
@@ -14,14 +13,11 @@ import {
 } from 'react-icons/bi'
 import { Experience } from '@/components/Experience'
 import { Contact } from '@/components/Contact'
-import React from 'react'
 import { Header } from '@/components/Header'
-
-const rubik = Rubik({ subsets: ['latin'] })
 
 export default function PageDefault() {
   return (
-    <div className={`${rubik.className} overflow-x-hidden`}>
+    <>
       <Header />
 
       <main className="bg-slate-100 m-0 lg:ml-72">
@@ -55,6 +51,6 @@ export default function PageDefault() {
           </Section>
         </div>
       </main>
-    </div>
+    </>
   )
 }

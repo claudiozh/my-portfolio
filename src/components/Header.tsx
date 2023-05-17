@@ -14,7 +14,7 @@ export const Header = () => {
 
   return (
     <header>
-      <div className="hidden lg:block fixed w-0 lg:w-72 ">
+      <div className="hidden lg:block fixed w-0 lg:w-72">
         <Sidebar className="border border-slate-600" />
       </div>
 

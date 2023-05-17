@@ -15,29 +15,23 @@ const socialMedia = [
   {
     id: 'github',
     url: 'https://github.com/claudiozh',
-    icon: (
-      <AiOutlineGithub className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer" />
-    ),
+    icon: <AiOutlineGithub />,
   },
   {
     id: 'instagram',
     url: 'https://www.instagram.com/claudiorodrigozh',
-    icon: (
-      <AiOutlineInstagram className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer" />
-    ),
+    icon: <AiOutlineInstagram />,
   },
   {
     id: 'linkedin',
     url: 'https://br.linkedin.com/in/claudio-rodrigo-medeiros-515755127',
-    icon: (
-      <AiOutlineLinkedin className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer" />
-    ),
+    icon: <AiOutlineLinkedin />,
   },
 ]
 
 export const Home = () => {
   return (
-    <div className="w-full bg-[#2E3D6E]">
+    <div className="w-full bg-primary">
       <div className="md:container md:mx-auto">
         <div className="flex flex-col justify-between h-screen">
           <div className="flex justify-center items-center h-[100%]">
@@ -67,7 +61,9 @@ export const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {social.icon}
+                    <div className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer">
+                      {social.icon}
+                    </div>
                   </a>
                 ))}
               </div>
@@ -87,7 +83,9 @@ export const Home = () => {
           <div className="flex justify-center items-center mb-5">
             <ScrollLink to={ids.about} smooth={true} duration={1500}>
               <div className="flex flex-col justify-center items-center gap-2">
-                <span className="text-gray-50">Rolar para baixo</span>
+                <span className="text-gray-50 hover:text-yellow-500 hover:cursor-pointer">
+                  Rolar para baixo
+                </span>
                 <RiMouseLine className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer" />
               </div>
             </ScrollLink>
