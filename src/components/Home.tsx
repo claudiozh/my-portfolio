@@ -10,6 +10,9 @@ import { RiMouseLine } from 'react-icons/ri'
 import { Link as ScrollLink } from 'react-scroll'
 import { Button } from '@/components/Button'
 import { ids } from '@/utils/navlinks'
+import { BiMenu } from 'react-icons/bi'
+// import Drawer from './Drawer'
+import { Logo } from './Logo'
 
 const socialMedia = [
   {
@@ -40,6 +43,11 @@ export const Home = () => {
     <div className="w-full bg-[#2E3D6E]">
       <div className="md:container md:mx-auto">
         <div className="flex flex-col justify-between h-screen">
+          <div className="p-4 flex justify-between items-center  gap-2">
+            <Logo />
+            <BiMenu className="text-4xl text-gray-100 border border-white rounded cursor-pointer" />
+            {/* <Drawer open /> */}
+          </div>
           <div className="flex justify-center items-center h-[100%]">
             <div className="flex flex-col items-center gap-8 mt-20">
               <Image

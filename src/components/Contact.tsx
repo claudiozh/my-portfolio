@@ -19,8 +19,8 @@ export const Contact = () => {
       </div>
 
       <div className="col-span-full md:col-span-4">
-        <form className="flex flex-col gap-5 ">
-          <div className="flex gap-5">
+        <form className="flex flex-col gap-5">
+          <div className="flex flex-col md:flex-row gap-5">
             <input type="text" placeholder="Seu nome" className={styleInput} />
             <input type="email" placeholder="Email" className={styleInput} />
           </div>

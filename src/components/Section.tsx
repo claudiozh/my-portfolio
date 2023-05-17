@@ -10,7 +10,7 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
 
 export const Section = ({ children, title, icon, id, className }: Props) => {
   return (
-    <section className={clsx('px-6 py-4 md:px-16 md:py-8', className)} id={id}>
+    <section className={clsx('px-6 py-4 sm:px-16 sm:py-8', className)} id={id}>
       <div className="flex flex-col">
         <span className="text-5xl text-gray-600 opacity-10  mb-[-30px]  ml-[-10px] md:ml-[-25px]">
           {icon}

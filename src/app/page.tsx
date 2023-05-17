@@ -37,7 +37,7 @@ export default function PageDefault() {
           <Home />
         </section>
 
-        <div className="lg:container mx-auto">
+        <div className="max-w-[1150px] mx-auto">
           <Section title="Sobre mim" icon={<BiUserCheck />} id={ids.about}>
             <About />
           </Section>

@@ -38,7 +38,7 @@ export const Skills = () => {
   }
 
   return (
-    <div className="grid grid-cols-4 gap-10 justify-center">
+    <div className="grid grid-cols-4 gap-6 justify-center">
       {Object.entries(skills).map(([key, skill]) => (
         <div
           key={key}
