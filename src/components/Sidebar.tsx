@@ -45,7 +45,7 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
           {navLinks.map((link, index) => (
             <ScrollLink
               spy
-              offset={-150}
+              offset={-100}
               key={link.id}
               to={link.id}
               smooth={true}
@@ -56,7 +56,7 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
                 <span>
                   {iconBySectionId[link.id as keyof typeof iconBySectionId]}
                 </span>
-                <span>{link.label} </span>
+                <span>{link.label}</span>
               </li>
             </ScrollLink>
           ))}
