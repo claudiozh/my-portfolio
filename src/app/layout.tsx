@@ -5,11 +5,24 @@ import './globals.css'
 
 const rubik = Rubik({ subsets: ['latin'] })
 
+const title = 'Portfolio - Claudio Rodrigo'
+const description =
+  'Desenvolvedor backend com experiência em projetos que utilizam Node.js e seus frameworks associados, incluindo Express, Fastify e NestJS. Além disso, já trabalhei em projetos front-end, utilizando ferramentas como ExtJS e ReactJS.'
+
 export const metadata: Metadata = {
-  title: 'Claudio Rodrigo',
-  description:
-    'Portfólio de Claudio Rodrigo. Desenvolvedor backend com experiência em projetos frontend.',
+  title,
+  description,
   themeColor: '#1C2948',
+
+  openGraph: {
+    title,
+    description,
+    type: 'website',
+  },
+  twitter: {
+    title,
+    description,
+  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
