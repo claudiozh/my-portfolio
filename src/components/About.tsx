@@ -14,7 +14,7 @@ export const About = () => {
       <div className="flex flex-col gap-4">
         <div className="flex justify-between gap-8">
           <p className="text-gray-600 text-lg font-bold">{language}</p>
-          <p>{percentage}%</p>
+          <p className="font-bold">{percentage}%</p>
         </div>
 
         <ProgressBar percentage={percentage} />

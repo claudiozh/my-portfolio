@@ -2,19 +2,15 @@ import { IEducationOrExperience } from '@/interfaces/education-or-experience'
 
 export const education: IEducationOrExperience[] = [
   {
-    title: 'Conclusão do Ensino Médio',
-    description: 'Escola Estadual Margarida de Freitas',
-    date: 'Dezembro 2014',
-  },
-  {
-    title: 'Início da Graduação em Análise e Desenvolvimento de Sistemas',
+    title: 'Ensino Médio',
     description:
-      'Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Pau dos Ferros/RN',
-    date: 'Janeiro 2015',
+      'Concluído na Escola Estadual Margarida de Freitas Portalegre/RN, adquirindo conhecimentos nas disciplinas fundamentais e desenvolvendo habilidades de pensamento crítico e resolução de problemas',
+    date: '2012 - 2014',
   },
   {
-    title: 'Início do Estágio',
-    description: 'Prefeitura Municipal de Portalegre/RN',
-    date: 'Março 2017',
+    title: 'Graduação',
+    description:
+      'Graduado em Análise e Desenvolvimento de Sistemas pelo IFRN campus Pau dos Ferros. Durante o curso, aprimorei minhas habilidades técnicas e adquiri conhecimentos em programação, análise de sistemas e desenvolvimento de software',
+    date: '2015 - 2019',
   },
 ]

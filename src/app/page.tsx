@@ -39,7 +39,7 @@ export default function PageDefault() {
           </Section>
 
           <Section
-            title="Experiência"
+            title="Formação & Experiência"
             icon={<BiBriefcaseAlt2 />}
             id={ids.experience}
           >
