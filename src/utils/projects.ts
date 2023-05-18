@@ -23,4 +23,18 @@ export const projects: Project[] = [
     url: 'https://moveit-claudiozh.vercel.app/',
     emphasis: false,
   },
+  {
+    description:
+      'O PetDevShop é um sistema desenvolvido em Typescript, CSS e HTML, que oferece aos usuários a capacidade de listar animais e aplicar filtros para refinar suas pesquisas.',
+    image: '/petshop.png',
+    url: 'https://petshop-nodets.onrender.com/',
+    emphasis: false,
+  },
+  {
+    description:
+      'O React Calc IMC é uma calculadora de IMC desenvolvida em React. O IMC é uma medida utilizada para calcular se uma pessoa está no peso ideal.',
+    image: '/calculator.png',
+    url: 'https://react-calc-imc-claudiozh.vercel.app/',
+    emphasis: false,
+  },
 ]
