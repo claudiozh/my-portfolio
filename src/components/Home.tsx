@@ -10,6 +10,7 @@ import { RiMouseLine } from 'react-icons/ri'
 import { Link as ScrollLink } from 'react-scroll'
 import { Button } from '@/components/Button'
 import { ids } from '@/utils/navlinks'
+import { pathImages } from '@/utils/path-images'
 
 const socialMedia = [
   {
@@ -37,7 +38,7 @@ export const Home = () => {
           <div className="flex justify-center items-center h-[100%]">
             <div className="flex flex-col items-center gap-8 mt-20">
               <Image
-                src="/avatar3.png"
+                src={pathImages.avatar3}
                 className="rounded-full bg-slate-50 border-4"
                 alt="Logo"
                 width={130}

@@ -13,16 +13,6 @@ export const metadata: Metadata = {
   title,
   description,
   themeColor: '#1C2948',
-
-  openGraph: {
-    title,
-    description,
-    type: 'website',
-  },
-  twitter: {
-    title,
-    description,
-  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

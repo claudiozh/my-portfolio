@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { ProgressBar } from '@/components/ProgressBar'
 import clsx from 'clsx'
+import { pathImages } from '@/utils/path-images'
 
 type Props = {
   language: string
@@ -25,12 +26,13 @@ export const About = () => {
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
       <Image
-        src="/avatar4.png"
-        className=" border-4 rounded-full"
-        alt="Logo"
+        src={pathImages.avatar4}
+        alt="Avatar"
+        className="border-4 rounded-full"
         width={160}
         height={160}
       />
+
       <div className=" bg-white shadow-xl p-8 rounded-3xl">
         <div className="relative">
           <div

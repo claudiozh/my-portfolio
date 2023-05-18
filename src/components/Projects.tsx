@@ -38,7 +38,7 @@ export const Projects = () => {
           >
             <Image
               src={project.image}
-              alt="Logo"
+              alt="Projeto"
               width={180}
               height={180}
               className="w-auto max-h-12"
