@@ -2,6 +2,7 @@ import { Button } from '@/components/Button'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { projects } from '@/utils/projects'
+import Link from 'next/link'
 
 export const Projects = () => {
   return (
@@ -20,10 +21,12 @@ export const Projects = () => {
 
           <p className="text-gray-400 text-center">{project.description}</p>
 
-          <Button
-            text="Acessar"
-            variant={project?.emphasis ? 'primary' : 'secondary'}
-          />
+          <Link href={project.url} target="_blank">
+            <Button
+              text="Acessar"
+              variant={project?.emphasis ? 'primary' : 'secondary'}
+            />
+          </Link>
         </div>
       ))}
     </div>

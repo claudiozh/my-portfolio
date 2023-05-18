@@ -5,7 +5,7 @@ export const projects: Project[] = [
     description:
       'O AnyShare é um serviço que compartilhe códigos, comandos ou qualquer tipo de texto em tempo real.',
     image: '/anyshare.png',
-    url: 'https://anyshare.vercel.app/',
+    url: 'https://petshop-nodets.onrender.com/',
     emphasis: false,
   },
   {
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     de trabalho de 25 minutos seguidos por intervalos curtos. A cada
     ciclo, os usuários recebem desafios para realizar.`,
     image: '/moveit.png',
-    url: 'https://moveit-ten-umber.vercel.app/',
+    url: 'https://moveit-claudiozh.vercel.app/',
     emphasis: false,
   },
 ]

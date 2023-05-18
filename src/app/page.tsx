@@ -17,7 +17,7 @@ import { Header } from '@/components/Header'
 
 export default function PageDefault() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Header />
 
       <main className="bg-slate-100 m-0 lg:ml-72">
@@ -51,6 +51,6 @@ export default function PageDefault() {
           </Section>
         </div>
       </main>
-    </>
+    </div>
   )
 }

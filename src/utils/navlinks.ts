@@ -20,7 +20,7 @@ export const ids: Record<INavIds, string> = {
 export const navLinks: INavLink[] = [
   {
     id: ids.home,
-    label: 'Home',
+    label: 'Início',
   },
   {
     id: ids.about,
