@@ -25,7 +25,7 @@ export const projects: Project[] = [
   },
   {
     description:
-      'O PetDevShop é um sistema desenvolvido em Typescript, CSS e HTML, que oferece aos usuários a capacidade de listar animais e aplicar filtros para refinar suas pesquisas.',
+      'O PetDevShop é um sistema desenvolvido em Typescript, CSS e HTML, que oferece aos usuários a capacidade de listar animais e aplicar filtros.',
     image: '/petshop.png',
     url: 'https://petshop-nodets.onrender.com/',
     emphasis: false,
