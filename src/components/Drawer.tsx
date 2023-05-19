@@ -22,7 +22,7 @@ export const Drawer = ({ children, isOpen, setIsOpen }: Props) => {
         className={clsx(
           'w-72 h-full absolute left-0 shadow-xl delay-400 ',
           'duration-500 ease-in-out transition-all transform',
-          isOpen ? 'translate-x-0' : 'translate-x-full',
+          isOpen ? '-translate-x-0' : '-translate-x-full',
         )}
       >
         {children}
