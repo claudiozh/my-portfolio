@@ -1,5 +1,5 @@
 <div style="text-align: center">
-    <a href="https://portfolio-claudiozh.vercel.app">
+    <a href="https://portfolio-claudiozh.vercel.app" target="_blank">
   <img src="https://portfolio-claudiozh.vercel.app/images/og-image.png" alt="Logo do meu site" style="max-width: 500px; border-radius: 10px; margin-bottom: 20px">
     </a>
 </div>
