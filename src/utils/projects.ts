@@ -6,7 +6,7 @@ export const projects: Project[] = [
     description:
       'O AnyShare é um serviço que compartilhe códigos, comandos ou qualquer tipo de texto em tempo real.',
     image: pathImages.anyshare,
-    url: 'https://petshop-nodets.onrender.com/',
+    url: 'https://anyshare-zh.vercel.app/',
     emphasis: false,
   },
   {
