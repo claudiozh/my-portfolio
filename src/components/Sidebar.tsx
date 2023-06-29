@@ -42,7 +42,7 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
 
       <nav className="flex-1 py-16">
         <ul className="text-lg text-gray-50 font-semibold">
-          {navLinks.map((link, index) => (
+          {navLinks.map((link) => (
             <ScrollLink
               spy
               offset={-150}
