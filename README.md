@@ -22,7 +22,7 @@
 6. Acesse a aplicação em seu navegador através do endereço http://localhost:3000.
 
 ### Demo
-✨ Clique [aqui](https://portfolio-claudiozh.vercel.app) para ver uma demonstração online do projeto.
+✨ Clique [aqui](https://claudiozh.vercel.app) para ver uma demonstração online do projeto.
 
 ### Agradecimento
 🙌 Obrigado por visitar meu portfolio e espero que você encontre algo interessante aqui!
