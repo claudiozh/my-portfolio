@@ -5,7 +5,7 @@ import './globals.css'
 
 const rubik = Rubik({ subsets: ['latin'] })
 
-const title = 'Portfolio - Claudio Rodrigo'
+const title = 'Portfólio - Claudio Rodrigo'
 const description =
   'Desenvolvedor backend com experiência em projetos que utilizam Node.js e seus frameworks associados, incluindo Express, Fastify e NestJS. Além disso, já trabalhou em projetos front-end, utilizando ferramentas como ExtJS e ReactJS.'
 const ogImage = `${process.env.NEXT_PUBLIC_APP_URL}/images/og-image.png`
