@@ -1,28 +1,10 @@
 import Image from 'next/image'
 import { Button } from '@/components/Button'
-import { ProgressBar } from '@/components/ProgressBar'
 import clsx from 'clsx'
 import { pathImages } from '@/utils/path-images'
-
-type Props = {
-  language: string
-  percentage: number
-}
+import { SkillProgressBar } from '@/components/SkillProgressBar'
 
 export const About = () => {
-  const Stack = ({ language, percentage }: Props) => {
-    return (
-      <div className="flex flex-col gap-4">
-        <div className="flex justify-between gap-8">
-          <p className="text-gray-600 text-lg font-bold">{language}</p>
-          <p className="font-bold">{percentage}%</p>
-        </div>
-
-        <ProgressBar percentage={percentage} />
-      </div>
-    )
-  }
-
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
       <Image
@@ -66,8 +48,8 @@ export const About = () => {
           </div>
 
           <div className="col-span-full xl:col-span-2 flex flex-col gap-8">
-            <Stack language="Dev backend" percentage={80} />
-            <Stack language="Dev frontend" percentage={20} />
+            <SkillProgressBar skill="Dev backend" percentage={80} />
+            <SkillProgressBar skill="Dev frontend" percentage={20} />
           </div>
         </div>
 
