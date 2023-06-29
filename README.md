@@ -1,6 +1,6 @@
 <div style="text-align: center">
     <a href="https://portfolio-claudiozh.vercel.app" target="_blank">
-  <img src="https://portfolio-claudiozh.vercel.app/images/og-image.png" alt="Logo do meu site" style="max-width: 500px; border-radius: 10px; margin-bottom: 20px">
+  <img src="./public/images/og-image.png" alt="Logo do meu site" style="max-width: 500px; border-radius: 10px; margin-bottom: 20px">
     </a>
 </div>
 
@@ -22,7 +22,7 @@
 6. Acesse a aplicação em seu navegador através do endereço http://localhost:3000.
 
 ### Demo
-✨ Clique [aqui](https://portfolio-claudiozh.vercel.app) para ver uma demonstração online do projeto.
+✨ Clique [aqui](https://claudiozh.vercel.app) para ver uma demonstração online do projeto.
 
 ### Agradecimento
 🙌 Obrigado por visitar meu portfolio e espero que você encontre algo interessante aqui!
