@@ -10,7 +10,7 @@ export const experience: IEducationOrExperience[] = [
   {
     title: 'Estágio',
     description:
-      'Estágio realizado na Prefeitura Municipal de Portalegre/RN, proporcionando uma experiência prática no ambiente de trabalho e familiaridade com processos organizacionais',
+      'Estágio na área de TI na Prefeitura de Portalegre (RN): oportunidade de vivenciar e contribuir com projetos tecnológicos, apoiando a modernização e eficiência dos serviços públicos.',
     date: '2017 - 2018',
   },
 ]
