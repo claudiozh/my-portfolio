@@ -11,6 +11,7 @@ import { Link as ScrollLink } from 'react-scroll'
 import { Button } from '@/components/Button'
 import { ids } from '@/utils/navlinks'
 import { pathImages } from '@/utils/path-images'
+import { useState } from 'react'
 
 const socialMedia = [
   {
@@ -31,6 +32,8 @@ const socialMedia = [
 ]
 
 export const Home = () => {
+  const [toggleAvatar, setToggleAvatar] = useState(pathImages.avatar3)
+
   return (
     <div className="w-full bg-primary">
       <div className="md:container md:mx-auto">
@@ -38,11 +41,13 @@ export const Home = () => {
           <div className="flex h-[100%] items-center justify-center">
             <div className="mt-20 flex flex-col items-center gap-8">
               <Image
-                src={pathImages.avatar3}
-                className="rounded-full border-4 bg-slate-50"
+                src={toggleAvatar}
+                className="cursor-pointer rounded-full border-4 bg-slate-50"
                 alt="Logo"
                 width={130}
                 height={130}
+                onMouseOver={() => setToggleAvatar(pathImages.avatar4)}
+                onMouseOut={() => setToggleAvatar(pathImages.avatar3)}
               />
 
               <div className="flex flex-col items-center">
