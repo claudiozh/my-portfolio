@@ -42,4 +42,12 @@ export const projects: IProject[] = [
     urlGithub: 'https://github.com/claudiozh/react-calc-imc',
     emphasis: false,
   },
+  {
+    description:
+      'Este é o meu projeto de portfólio que destaca minha expertise em desenvolvimento backend com Node.js e um pouco da minha experiência com React, Next.js, Typescript, CSS e HTML.',
+    image: pathImages.logoDark,
+    urlSite: 'https://claudiozh.vercel.app/',
+    urlGithub: 'https://github.com/claudiozh/portfolio',
+    emphasis: false,
+  },
 ]

@@ -1,5 +1,6 @@
 export const pathImages = {
   logo: '/images/logo.png',
+  logoDark: '/images/logo-dark-mode.png',
   anyshare: '/images/anyshare.png',
   avatar1: '/images/avatar1.png',
   avatar2: '/images/avatar2.png',
