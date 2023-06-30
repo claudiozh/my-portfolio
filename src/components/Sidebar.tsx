@@ -40,7 +40,7 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
     >
       <Logo />
 
-      <nav className="flex-grow py-14">
+      <nav className="flex-grow py-12">
         <ul className="text-lg font-semibold text-gray-50">
           {navLinks.map((link) => (
             <ScrollLink
