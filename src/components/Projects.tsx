@@ -3,7 +3,7 @@
 import { Button } from '@/components/Button'
 import Image from 'next/image'
 import clsx from 'clsx'
-import { projects } from '@/utils/projects'
+import { projects } from '@/data/projects'
 import Link from 'next/link'
 import { useState } from 'react'
 

@@ -1,4 +1,4 @@
-import { skills } from '@/utils/skills'
+import { skills } from '@/data/skills'
 import React from 'react'
 import { FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaGitAlt } from 'react-icons/fa'
 import {

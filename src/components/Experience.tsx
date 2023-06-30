@@ -1,6 +1,6 @@
 import { IEducationOrExperience } from '@/interfaces/education-or-experience'
-import { education } from '@/utils/education'
-import { experience } from '@/utils/experience'
+import { education } from '@/data/education'
+import { experience } from '@/data/experience'
 
 type TimelineProps = {
   list: IEducationOrExperience[]
