@@ -12,6 +12,14 @@
 
 💡 Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades de desenvolvimento. Sinta-se à vontade para explorar meus projetos e entrar em contato comigo caso queira colaborar ou tenha alguma pergunta.
 
+## 💼 Tecnologias utilizadas
+* NextJS 
+* TypeScript
+* TailwindCSS
+* ReactScroll
+* ReactIcons
+* AOS Animations
+
 ### Como executar o projeto 
 
 1. Clone o repositório para sua máquina local.
