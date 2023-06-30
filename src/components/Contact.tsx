@@ -48,7 +48,7 @@ export const Contact = () => {
             <h1 className="text-2xl font-bold text-gray-600">
               Que bom que você entrou em contato comigo! 😄
             </h1>
-            <p className="mt-4 text-green-400 font-bold">
+            <p className="mt-4 font-bold text-green-400">
               Agora é só aguardar que eu irei te responder o mais rápido
               possível 😉
             </p>
@@ -61,8 +61,8 @@ export const Contact = () => {
           className="flex flex-col gap-5"
           onSubmit={handleSubmit(handleSendMessage)}
         >
-          <div className="flex flex-col md:flex-row gap-4">
-            <div className="w-full flex flex-col gap-1">
+          <div className="flex flex-col gap-4 md:flex-row">
+            <div className="flex w-full flex-col gap-1">
               <input
                 {...register('name')}
                 type="text"
@@ -75,7 +75,7 @@ export const Contact = () => {
               )}
             </div>
 
-            <div className="w-full flex flex-col gap-1">
+            <div className="flex w-full flex-col gap-1">
               <input
                 {...register('email')}
                 placeholder="Digite seu email"

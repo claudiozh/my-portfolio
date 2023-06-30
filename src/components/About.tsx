@@ -6,22 +6,22 @@ import { SkillProgressBar } from '@/components/SkillProgressBar'
 
 export const About = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+    <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
       <Image
         src={pathImages.avatar4}
         alt="Avatar"
-        className="border-4 rounded-full"
+        className="rounded-full border-4"
         width={160}
         height={160}
       />
 
-      <div className=" bg-white shadow-xl p-8 rounded-3xl">
+      <div className=" rounded-3xl bg-white p-8 shadow-xl">
         <div className="relative">
           <div
             className={clsx(
               'absolute flex items-center justify-center',
-              'w-0 h-0 left-[50%] md:left-[-50px] top-[-50px] md:top-0',
-              'bottom-full transform translate-x-[-50%]',
+              'left-[50%] top-[-50px] h-0 w-0 md:left-[-50px] md:top-0',
+              'bottom-full translate-x-[-50%] transform',
             )}
           >
             <div
@@ -36,8 +36,8 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-6 gap-8 mb-8">
-          <div className="col-span-full xl:col-span-4 text-gray-600 text-lg">
+        <div className="mb-8 grid grid-cols-6 gap-8">
+          <div className="col-span-full text-lg text-gray-600 xl:col-span-4">
             <p>
               Olá, meu nome é Claudio e sou um desenvolvedor backend com
               experiência em projetos que utilizam Node.js e seus frameworks
@@ -47,7 +47,7 @@ export const About = () => {
             </p>
           </div>
 
-          <div className="col-span-full xl:col-span-2 flex flex-col gap-8">
+          <div className="col-span-full flex flex-col gap-8 xl:col-span-2">
             <SkillProgressBar skill="Dev backend" percentage={80} />
             <SkillProgressBar skill="Dev frontend" percentage={20} />
           </div>

@@ -14,13 +14,13 @@ export const Header = () => {
 
   return (
     <header>
-      <div className="hidden lg:block fixed w-0 lg:w-72">
+      <div className="fixed hidden w-0 lg:block lg:w-72">
         <Sidebar className="border border-slate-600" />
       </div>
 
-      <div className="block lg:hidden absolute top-0 right-0 p-4">
+      <div className="absolute right-0 top-0 block p-4 lg:hidden">
         <BiMenu
-          className="text-4xl text-gray-100 border border-white rounded cursor-pointer"
+          className="cursor-pointer rounded border border-white text-4xl text-gray-100"
           onClick={handleOpenDrawer}
         />
 

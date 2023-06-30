@@ -17,42 +17,40 @@ import { Header } from '@/components/Header'
 
 export default function PageDefault() {
   return (
-    <div>
-      <div className="overflow-x-hidden">
-        <Header />
+    <>
+      <Header />
 
-        <main className="bg-slate-100 m-0 lg:ml-72">
-          <section id={ids.home}>
-            <Home />
-          </section>
+      <main className="m-0 bg-slate-100 lg:ml-72">
+        <section id={ids.home}>
+          <Home />
+        </section>
 
-          <div className="max-w-[1150px] mx-auto">
-            <Section title="Sobre mim" icon={<BiUserCheck />} id={ids.about}>
-              <About />
-            </Section>
+        <div className="mx-auto max-w-6xl">
+          <Section title="Sobre mim" icon={<BiUserCheck />} id={ids.about}>
+            <About />
+          </Section>
 
-            <Section title="Projetos" icon={<BiDesktop />} id={ids.projects}>
-              <Projects />
-            </Section>
+          <Section title="Projetos" icon={<BiDesktop />} id={ids.projects}>
+            <Projects />
+          </Section>
 
-            <Section title="Habilidades" icon={<BiCode />} id={ids.skills}>
-              <Skills />
-            </Section>
+          <Section title="Habilidades" icon={<BiCode />} id={ids.skills}>
+            <Skills />
+          </Section>
 
-            <Section
-              title="Formação & Experiência"
-              icon={<BiBriefcaseAlt2 />}
-              id={ids.experience}
-            >
-              <Experience />
-            </Section>
+          <Section
+            title="Formação & Experiência"
+            icon={<BiBriefcaseAlt2 />}
+            id={ids.experience}
+          >
+            <Experience />
+          </Section>
 
-            <Section title="Contato" icon={<BiChat />} id={ids.contact}>
-              <Contact />
-            </Section>
-          </div>
-        </main>
-      </div>
-    </div>
+          <Section title="Contato" icon={<BiChat />} id={ids.contact}>
+            <Contact />
+          </Section>
+        </div>
+      </main>
+    </>
   )
 }

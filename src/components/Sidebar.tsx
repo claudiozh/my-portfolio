@@ -32,16 +32,16 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
   return (
     <div
       className={clsx(
-        'flex flex-col justify-between h-screen',
+        'flex h-screen flex-col justify-between',
         'relative space-y-6 overflow-y-scroll',
-        'px-8 py-12 bg-primary',
+        'bg-primary px-8 py-12',
         className,
       )}
     >
       <Logo />
 
-      <nav className="flex-1 py-16">
-        <ul className="text-lg text-gray-50 font-semibold">
+      <nav className="flex-1 py-14">
+        <ul className="text-lg font-semibold text-gray-50">
           {navLinks.map((link) => (
             <ScrollLink
               spy
@@ -52,7 +52,7 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
               duration={1000}
               activeClass="text-yellow-500"
             >
-              <li className="flex items-center mb-6 hover:text-yellow-500 hover:cursor-pointer">
+              <li className="mb-6 flex items-center hover:cursor-pointer hover:text-yellow-500">
                 <span>
                   {iconBySectionId[link.id as keyof typeof iconBySectionId]}
                 </span>

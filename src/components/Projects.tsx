@@ -24,16 +24,16 @@ export const Projects = () => {
   }
 
   return (
-    <div className="flex flex-col gap-8 items-center">
+    <div className="flex flex-col items-center gap-8">
       <div className="grid grid-cols-3 gap-8">
         {projects.slice(0, maxShowProjects).map((project, index) => (
           <div
             key={index}
             className={clsx(
-              'mx-auto my-auto container bg-white text-white flex flex-col items-center justify-center',
-              'gap-5 p-8 rounded-3xl shadow-xl',
+              'container mx-auto my-auto flex flex-col items-center justify-center bg-white text-white',
+              'gap-5 rounded-3xl p-8 shadow-xl',
               'col-span-full xl:col-span-1',
-              project?.emphasis && 'xl:transform xl:-rotate-3',
+              project?.emphasis && 'xl:-rotate-3 xl:transform',
             )}
           >
             <Image
@@ -41,10 +41,10 @@ export const Projects = () => {
               alt="Projeto"
               width={180}
               height={180}
-              className="w-auto max-h-12"
+              className="max-h-12 w-auto"
             />
 
-            <p className="text-gray-400 text-center">{project.description}</p>
+            <p className="text-center text-gray-400">{project.description}</p>
 
             <Link href={project.url} target="_blank">
               <Button
@@ -57,7 +57,7 @@ export const Projects = () => {
       </div>
 
       <a
-        className="text-red-500 font-bold border-b-2 border-red-500 cursor-pointer"
+        className="cursor-pointer border-b-2 border-red-500 font-bold text-red-500"
         onClick={showMore ? handleShowLess : handleShowMore}
       >
         {showMore ? 'Ver menos' : 'Ver mais'}

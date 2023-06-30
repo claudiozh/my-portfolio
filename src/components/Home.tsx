@@ -34,12 +34,12 @@ export const Home = () => {
   return (
     <div className="w-full bg-primary">
       <div className="md:container md:mx-auto">
-        <div className="flex flex-col justify-between h-screen">
-          <div className="flex justify-center items-center h-[100%]">
-            <div className="flex flex-col items-center gap-8 mt-20">
+        <div className="flex h-screen flex-col justify-between">
+          <div className="flex h-[100%] items-center justify-center">
+            <div className="mt-20 flex flex-col items-center gap-8">
               <Image
                 src={pathImages.avatar3}
-                className="rounded-full bg-slate-50 border-4"
+                className="rounded-full border-4 bg-slate-50"
                 alt="Logo"
                 width={130}
                 height={130}
@@ -49,6 +49,7 @@ export const Home = () => {
                 <h1 className="text-4xl font-bold text-gray-50">
                   Claudio Rodrigo
                 </h1>
+
                 <p className="text-gray-50">
                   Oi, sou um desenvolvedor backend.
                 </p>
@@ -62,7 +63,7 @@ export const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer">
+                    <div className="text-4xl text-gray-50 hover:cursor-pointer hover:text-yellow-500">
                       {social.icon}
                     </div>
                   </a>
@@ -81,13 +82,13 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center mb-5">
+          <div className="mb-5 flex items-center justify-center">
             <ScrollLink to={ids.about} smooth={true} duration={1500}>
-              <div className="flex flex-col justify-center items-center gap-2">
-                <span className="text-gray-50 hover:text-yellow-500 hover:cursor-pointer">
+              <div className="flex flex-col items-center justify-center gap-2">
+                <span className="text-gray-50 hover:cursor-pointer hover:text-yellow-500">
                   Rolar para baixo
                 </span>
-                <RiMouseLine className="text-4xl text-gray-50 hover:text-yellow-500 hover:cursor-pointer" />
+                <RiMouseLine className="text-4xl text-gray-50 hover:cursor-pointer hover:text-yellow-500" />
               </div>
             </ScrollLink>
           </div>

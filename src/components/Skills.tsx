@@ -38,12 +38,12 @@ export const Skills = () => {
   }
 
   return (
-    <div className="grid grid-cols-4 gap-6 justify-center">
+    <div className="grid grid-cols-4 justify-center gap-6">
       {Object.entries(skills).map(([key, skill]) => (
         <div
           key={key}
           className={clsx(
-            'col-span-2 md:col-span-1 flex flex-col justify-center items-center gap-4 py-5 rounded-3xl shadow-md hover:-rotate-6',
+            'col-span-2 flex flex-col items-center justify-center gap-4 rounded-3xl py-5 shadow-md hover:-rotate-6 md:col-span-1',
             colorVariants[skill.color as keyof typeof colorVariants] || '',
           )}
         >

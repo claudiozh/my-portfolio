@@ -13,15 +13,15 @@ export const Drawer = ({ children, isOpen, setIsOpen }: Props) => {
   return (
     <div
       className={clsx(
-        'min-h-screen fixed overflow-hidden z-10 bg-gray-900 bg-opacity-70',
+        'fixed z-10 min-h-screen overflow-hidden bg-gray-900 bg-opacity-70',
         'inset-0 transform ease-in-out',
         isOpen ? 'translate-x-0' : 'translate-x-full',
       )}
     >
       <div
         className={clsx(
-          'w-72 h-full absolute left-0 shadow-xl delay-400 ',
-          'duration-500 ease-in-out transition-all transform',
+          'delay-400 absolute left-0 h-full w-72 shadow-xl ',
+          'transform transition-all duration-500 ease-in-out',
           isOpen ? '-translate-x-0' : '-translate-x-full',
         )}
       >
@@ -29,7 +29,7 @@ export const Drawer = ({ children, isOpen, setIsOpen }: Props) => {
       </div>
 
       <div
-        className="w-screen h-full cursor-pointer"
+        className="h-full w-screen cursor-pointer"
         onClick={() => {
           setIsOpen(false)
         }}

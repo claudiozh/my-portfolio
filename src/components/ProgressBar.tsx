@@ -15,7 +15,7 @@ export const ProgressBar = ({ percentage }: Props) => {
   }
 
   return (
-    <div className="bg-gray-200 h-2 rounded w-full">
+    <div className="h-2 w-full rounded bg-gray-200">
       <div
         className={`${colorByPercentage()} h-full rounded`}
         style={{ width: `${barWidth}%` }}

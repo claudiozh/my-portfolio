@@ -27,7 +27,7 @@ export const Section = ({ children, title, icon, id, className }: Props) => {
       data-aos-duration="1000"
     >
       <div className="flex flex-col">
-        <span className="text-5xl text-gray-600 opacity-10  mb-[-30px]  ml-[-10px] md:ml-[-25px]">
+        <span className="mb-[-30px] ml-[-10px] text-5xl  text-gray-600  opacity-10 md:ml-[-25px]">
           {icon}
         </span>
         <h1 className="text-4xl font-bold text-gray-600">{title}</h1>
