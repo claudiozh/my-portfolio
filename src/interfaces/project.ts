@@ -1,6 +1,7 @@
-export interface Project {
+export interface IProject {
   description: string
   image: string
-  url: string
+  urlSite: string
+  urlGithub?: string
   emphasis: boolean
 }

@@ -46,12 +46,25 @@ export const Projects = () => {
 
             <p className="text-center text-gray-400">{project.description}</p>
 
-            <Link href={project.url} target="_blank">
-              <Button
-                text="Acessar"
-                variant={project?.emphasis ? 'primary' : 'secondary'}
-              />
-            </Link>
+            <div className="flex flex-row items-center gap-8">
+              {project?.urlGithub && (
+                <a
+                  className="cursor-pointer font-bold text-red-500"
+                  href={project.urlGithub}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Código
+                </a>
+              )}
+
+              <Link href={project.urlSite} target="_blank">
+                <Button
+                  text="Acessar"
+                  variant={project?.emphasis ? 'primary' : 'secondary'}
+                />
+              </Link>
+            </div>
           </div>
         ))}
       </div>
