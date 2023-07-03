@@ -39,11 +39,12 @@ export const About = () => {
         <div className="mb-8 grid grid-cols-6 gap-8">
           <div className="col-span-full text-lg text-gray-600 xl:col-span-4">
             <p>
-              Olá, meu nome é Claudio e sou um desenvolvedor backend com
-              experiência em projetos que utilizam Node.js e seus frameworks
-              associados, incluindo Express, Fastify e NestJS. Além disso, já
-              trabalhei em projetos front-end, utilizando ferramentas como ExtJS
-              e ReactJS.
+              Olá, meu nome é Claudio e sou um desenvolvedor
+              <strong> backend</strong> com experiência em projetos que utilizam
+              <strong> NodeJS</strong> e seus frameworks associados, incluindo
+              <strong> Express, Fastify e NestJS</strong>. Além disso, já
+              trabalhei em projetos front-end, utilizando ferramentas como
+              <strong> ExtJS e ReactJS</strong>.
             </p>
           </div>
 
