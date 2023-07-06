@@ -42,8 +42,9 @@ export const About = () => {
               Olá, meu nome é Claudio e sou um desenvolvedor
               <strong> backend</strong> com experiência em projetos que utilizam
               <strong> NodeJS</strong> e seus frameworks associados, incluindo
-              <strong> Express, Fastify e NestJS</strong>. Além disso, já
-              trabalhei em projetos front-end, utilizando ferramentas como
+              <strong> Express, Fastify</strong> e<strong> NestJS</strong>. Além
+              disso, já trabalhei em projetos<strong> frontend </strong>
+              utilizando
               <strong> ExtJS e ReactJS</strong>.
             </p>
           </div>
