@@ -45,7 +45,7 @@ export const About = () => {
               <strong> Express, Fastify</strong> e<strong> NestJS</strong>. Além
               disso, já trabalhei em projetos<strong> frontend </strong>
               utilizando
-              <strong> ExtJS e ReactJS</strong>.
+              <strong> ExtJS </strong> e <strong> ReactJS</strong>.
             </p>
           </div>
 
