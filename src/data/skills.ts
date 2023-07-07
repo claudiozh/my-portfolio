@@ -2,8 +2,20 @@ import { ISkill, ISkillName } from '@/interfaces/skill'
 
 export const skills: Record<ISkillName, ISkill> = {
   nodejs: {
-    title: 'Node.js',
+    title: 'NodeJS',
     color: 'green',
+  },
+  express: {
+    title: 'Express',
+    color: 'slate',
+  },
+  fastify: {
+    title: 'Fastify',
+    color: 'neutral',
+  },
+  nestjs: {
+    title: 'NestJS',
+    color: 'red',
   },
   postgresql: {
     title: 'PostgreSQL',
@@ -36,6 +48,10 @@ export const skills: Record<ISkillName, ISkill> = {
   css: {
     title: 'CSS',
     color: 'orange',
+  },
+  extjs: {
+    title: 'ExtJS',
+    color: 'blue',
   },
   react: {
     title: 'React',

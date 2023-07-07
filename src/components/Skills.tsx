@@ -2,6 +2,10 @@ import { skills } from '@/data/skills'
 import React from 'react'
 import { FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaGitAlt } from 'react-icons/fa'
 import {
+  SiFastify,
+  SiSencha,
+  SiExpress,
+  SiNestjs,
   SiPostgresql,
   SiDocker,
   SiRedis,
@@ -14,6 +18,9 @@ import clsx from 'clsx'
 
 const iconByName: Record<ISkillName, React.JSX.Element> = {
   nodejs: <FaNodeJs />,
+  express: <SiExpress />,
+  fastify: <SiFastify />,
+  nestjs: <SiNestjs />,
   postgresql: <SiPostgresql />,
   docker: <SiDocker />,
   redis: <SiRedis />,
@@ -22,6 +29,7 @@ const iconByName: Record<ISkillName, React.JSX.Element> = {
   typescript: <TbBrandTypescript />,
   html: <FaHtml5 />,
   css: <FaCss3Alt />,
+  extjs: <SiSencha />,
   react: <FaReact />,
   nextjs: <TbBrandNextjs />,
   git: <FaGitAlt />,
@@ -35,6 +43,8 @@ export const Skills = () => {
     orange: 'bg-orange-500',
     gray: 'bg-gray-500',
     indigo: 'bg-indigo-500',
+    slate: 'bg-slate-500',
+    neutral: 'bg-neutral-500',
   }
 
   return (

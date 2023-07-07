@@ -1,5 +1,8 @@
 export type ISkillName =
   | 'nodejs'
+  | 'express'
+  | 'fastify'
+  | 'nestjs'
   | 'postgresql'
   | 'docker'
   | 'socketio'
@@ -8,6 +11,7 @@ export type ISkillName =
   | 'typescript'
   | 'html'
   | 'css'
+  | 'extjs'
   | 'react'
   | 'nextjs'
   | 'git'
