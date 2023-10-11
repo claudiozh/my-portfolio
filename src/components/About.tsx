@@ -55,7 +55,7 @@ export const About = () => {
           </div>
         </div>
 
-        <Button text="Download csv" />
+        <Button text="Download cv" />
       </div>
     </div>
   )
